@@ -9,6 +9,10 @@ defmodule Blog.Repo do
     end
   end
 
+  def priv do
+    app_dir(:blog, "priv/repo")
+  end
+
   defp url_from_env(nil) do
     """
     Missing database config. Please either specify a `DATABASE_URL` or create \
