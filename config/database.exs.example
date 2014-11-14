@@ -1,0 +1,8 @@
+use Mix.Config
+
+config :ecto, Blog.Repo,
+  username: "postgres",
+  password: "postgres",
+  host: "localhost",
+  port: "port",
+  database: "database"
