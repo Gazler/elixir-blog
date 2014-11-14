@@ -15,14 +15,18 @@ defmodule Blog.Mixfile do
   # Type `mix help compile.app` for more information
   def application do
     [mod: {Blog, []},
-     applications: [:phoenix, :cowboy, :logger]]
+     applications: [:phoenix, :cowboy, :logger, :postgrex, :ecto]]
   end
 
   # Specifies your project dependencies
   #
   # Type `mix help deps` for examples and options
   defp deps do
-    [{:phoenix, github: "phoenixframework/phoenix"},
-     {:cowboy, "~> 1.0"}]
+    [
+      {:phoenix, github: "phoenixframework/phoenix"},
+      {:cowboy, "~> 1.0"},
+      {:ecto, "~> 0.2.5"},
+      {:postgrex, "~> 0.6.0"}
+    ]
   end
 end

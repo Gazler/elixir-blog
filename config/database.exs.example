@@ -1,0 +1,8 @@
+use Mix.Config
+
+config :ecto, Blog.Repo,
+  username: "user",
+  password: "pass",
+  hostname: "localhost",
+  port: "port",
+  database: "database"
